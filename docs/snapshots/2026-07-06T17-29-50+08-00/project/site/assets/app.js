@@ -8,14 +8,6 @@ const changeLogButton = document.querySelector("#change-log-button");
 let indexData = null;
 let currentView = { type: "section", id: "meta" };
 
-function isStaticDeployment() {
-  return !["127.0.0.1", "localhost", ""].includes(window.location.hostname);
-}
-
-function orderedSources(apiPath, staticPath) {
-  return isStaticDeployment() ? [staticPath, apiPath] : [apiPath, staticPath];
-}
-
 async function fetchFirstAvailable(resources) {
   const errors = [];
 
@@ -113,7 +105,7 @@ function markdownToHtml(markdown) {
 }
 
 async function loadIndex() {
-  const response = await fetchFirstAvailable(orderedSources("/api/index", "/data/docs/index.json"));
+  const response = await fetchFirstAvailable(["/api/index", "/data/docs/index.json"]);
   indexData = await response.json();
   renderSectionList();
 }
@@ -149,10 +141,10 @@ async function loadSection(sectionId) {
   setActiveNavigation(sectionId);
 
   try {
-    const response = await fetchFirstAvailable(orderedSources(
+    const response = await fetchFirstAvailable([
       `/api/doc/${encodeURIComponent(section.file)}`,
       `/data/docs/${encodeURIComponent(section.file)}`,
-    ));
+    ]);
     const markdown = await response.text();
     documentView.innerHTML = markdownToHtml(markdown);
     docStatus.textContent = `${indexData.document.status} · ${section.file}`;
@@ -199,10 +191,10 @@ async function loadChangeLog() {
   setActiveNavigation("change-log");
 
   try {
-    const response = await fetchFirstAvailable(orderedSources(
+    const response = await fetchFirstAvailable([
       "/api/changelog",
       "/data/change-log/index.json",
-    ));
+    ]);
     const data = await response.json();
     documentView.innerHTML = renderChangeLog(data);
     docStatus.textContent = data.description;

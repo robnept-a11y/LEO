@@ -77,19 +77,6 @@
       ],
       "reason": "通过 GitHub 仓库触发 Cloudflare Pages 自动构建并发布 LEO，形成稳定公网访问地址。",
       "previous_snapshot": "docs/snapshots/2026-07-06T17-28-20+08-00/project"
-    },
-    {
-      "id": "2026-07-06-fix-static-data-loading-on-pages",
-      "time": "2026-07-06T17:29:50+08:00",
-      "title": "修复 Cloudflare Pages 静态数据读取",
-      "updated_by": "Codex，根据部署验证结果执行",
-      "changed_parts": [
-        "site/assets/app.js",
-        "docs/change-log/index.json",
-        "docs/snapshots"
-      ],
-      "reason": "Cloudflare Pages 会对不存在的 /api 路径返回站点 HTML，前端需要在公网静态部署环境优先读取 /data 路径。",
-      "previous_snapshot": "docs/snapshots/2026-07-06T17-29-50+08-00/project"
     }
   ]
 }
