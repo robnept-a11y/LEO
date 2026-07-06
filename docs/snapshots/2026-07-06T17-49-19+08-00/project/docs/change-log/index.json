@@ -108,20 +108,6 @@
       ],
       "reason": "通过外部邮箱名单、GitHub Actions 和 Cloudflare API 自动维护 Cloudflare Access Group，使 LEO 公网站点可以逐步实现稳定的访问权限管理，同时避免把真实邮箱名单提交到公开仓库。",
       "previous_snapshot": "docs/snapshots/2026-07-06T17-37-54+08-00/project"
-    },
-    {
-      "id": "2026-07-06-improve-navigation-and-change-log-order",
-      "time": "2026-07-06T17:49:19+08:00",
-      "title": "优化固定导航与 Change Log 排序",
-      "updated_by": "Codex，根据用户明确要求执行",
-      "changed_parts": [
-        "site/assets/styles.css",
-        "site/assets/app.js",
-        "docs/change-log/index.json",
-        "docs/snapshots"
-      ],
-      "reason": "让页面导航栏在滚动时保持固定位置并自动折叠但不完全隐藏，同时让 Change Log 按最新消息在上的顺序展示。",
-      "previous_snapshot": "docs/snapshots/2026-07-06T17-49-19+08-00/project"
     }
   ]
 }

@@ -33,15 +33,9 @@ button {
 }
 
 .sidebar {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow-y: auto;
-  overscroll-behavior: contain;
   border-right: 1px solid var(--line);
   background: #fbfaf6;
   padding: 24px 18px;
-  transition: padding 180ms ease;
 }
 
 .brand {
@@ -51,7 +45,6 @@ button {
   align-items: center;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--line);
-  transition: grid-template-columns 180ms ease, padding-bottom 180ms ease;
 }
 
 .brand-mark {
@@ -63,7 +56,6 @@ button {
   color: var(--accent);
   font-weight: 800;
   letter-spacing: 0;
-  transition: width 180ms ease, height 180ms ease, font-size 180ms ease;
 }
 
 .brand h1 {
@@ -80,7 +72,6 @@ button {
 
 .nav {
   margin-top: 22px;
-  transition: margin-top 180ms ease;
 }
 
 .nav-label {
@@ -118,35 +109,6 @@ button {
 .section-button.active {
   background: var(--accent);
   color: #ffffff;
-}
-
-body.is-scrolled .sidebar {
-  padding-top: 12px;
-  padding-bottom: 14px;
-}
-
-body.is-scrolled .brand {
-  grid-template-columns: 40px minmax(0, 1fr);
-  padding-bottom: 12px;
-}
-
-body.is-scrolled .brand-mark {
-  width: 40px;
-  height: 40px;
-  font-size: 14px;
-}
-
-body.is-scrolled .brand h1 {
-  font-size: 18px;
-}
-
-body.is-scrolled .brand p {
-  margin-top: 2px;
-  font-size: 12px;
-}
-
-body.is-scrolled .nav {
-  margin-top: 12px;
 }
 
 .content {
@@ -273,25 +235,8 @@ body.is-scrolled .nav {
   }
 
   .sidebar {
-    z-index: 20;
-    height: auto;
-    max-height: 58vh;
     border-right: 0;
     border-bottom: 1px solid var(--line);
-    box-shadow: 0 8px 18px rgb(0 0 0 / 0.08);
-    transition: max-height 180ms ease, padding 180ms ease;
-  }
-
-  body.is-scrolled .sidebar {
-    max-height: 132px;
-  }
-
-  body.is-scrolled .nav-label {
-    margin-bottom: 6px;
-  }
-
-  body.is-scrolled .nav-label-spaced {
-    margin-top: 10px;
   }
 
   .toolbar {

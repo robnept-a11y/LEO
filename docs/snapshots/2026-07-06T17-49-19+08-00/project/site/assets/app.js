@@ -7,18 +7,6 @@ const changeLogButton = document.querySelector("#change-log-button");
 
 let indexData = null;
 let currentView = { type: "section", id: "meta" };
-let tickingScrollUpdate = false;
-
-function updateScrolledState() {
-  document.body.classList.toggle("is-scrolled", window.scrollY > 24);
-  tickingScrollUpdate = false;
-}
-
-function scheduleScrolledStateUpdate() {
-  if (tickingScrollUpdate) return;
-  tickingScrollUpdate = true;
-  window.requestAnimationFrame(updateScrolledState);
-}
 
 function isStaticDeployment() {
   return !["127.0.0.1", "localhost", ""].includes(window.location.hostname);
@@ -176,8 +164,6 @@ async function loadSection(sectionId) {
 
 function renderChangeLog(data) {
   const entries = data.entries
-    .slice()
-    .sort((left, right) => right.time.localeCompare(left.time))
     .map((entry) => {
       const changedParts = entry.changed_parts
         .map((part) => `<li><code>${escapeHtml(part)}</code></li>`)
@@ -247,7 +233,5 @@ refreshButton.addEventListener("click", async () => {
 });
 
 changeLogButton.addEventListener("click", loadChangeLog);
-window.addEventListener("scroll", scheduleScrolledStateUpdate, { passive: true });
-updateScrolledState();
 
 init();

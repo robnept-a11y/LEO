@@ -1,0 +1,55 @@
+{
+  "document": {
+    "title": "LEO 项目基准",
+    "status": "第一版草案",
+    "project": {
+      "name": "LEO",
+      "english_full_name": "Life Ethic Outline",
+      "chinese_name": "伦理大纲"
+    },
+    "purpose": "说明 LEO 的基础定位、使命、原则、范围、版本发布和本文件自身的修订方式。",
+    "not_data_body": true
+  },
+  "ai_reading_policy": {
+    "default": "先读本索引，再按任务读取相关章节文件。",
+    "avoid": "不要为了普通问题默认读取全部章节。"
+  },
+  "sections": [
+    {
+      "id": "meta",
+      "title": "项目基本信息",
+      "file": "00-meta.md",
+      "read_when": "需要确认 LEO 的名称、定位、文档边界时。"
+    },
+    {
+      "id": "purpose",
+      "title": "项目使命",
+      "file": "01-purpose.md",
+      "read_when": "需要讨论项目为什么存在、服务什么目标、不能替代什么时。"
+    },
+    {
+      "id": "principles",
+      "title": "基本原则",
+      "file": "02-principles.md",
+      "read_when": "需要判断内容表达、开放性、可追溯性、多元性、非强制性或长期维护原则时。"
+    },
+    {
+      "id": "scope",
+      "title": "内容范围",
+      "file": "03-scope.md",
+      "read_when": "需要判断某类伦理关系是否属于 LEO 当前范围时。"
+    },
+    {
+      "id": "versioning",
+      "title": "版本与发布",
+      "file": "04-versioning.md",
+      "read_when": "需要讨论版本、历史记录、公开发布、引用方式时。"
+    },
+    {
+      "id": "revision",
+      "title": "项目基准修订",
+      "file": "05-revision.md",
+      "read_when": "需要修改本项目基准或讨论其修订条件时。"
+    }
+  ]
+}
