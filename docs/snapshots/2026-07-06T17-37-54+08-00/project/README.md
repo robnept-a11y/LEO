@@ -71,20 +71,6 @@ Cloudflare Pages 连接 Git 仓库后，每次 `git push` 都会自动发布。
 docs/deploy/git-cloudflare-pages.md
 ```
 
-## 访问权限自动同步
-
-推荐使用 Cloudflare Access 保护公网地址，并用 GitHub Actions 自动同步许可邮箱组：
-
-```text
-docs/deploy/cloudflare-access-sync.md
-```
-
-许可邮箱名单说明：
-
-```text
-docs/access/README.md
-```
-
 ## Change Log 与快照
 
 更新记录保存在：

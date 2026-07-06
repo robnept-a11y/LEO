@@ -4,4 +4,4 @@ dist/
 .env
 .env.*
 *.log
-docs/access/allowed-emails.json
+

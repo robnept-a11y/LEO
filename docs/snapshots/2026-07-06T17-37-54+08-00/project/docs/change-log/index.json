@@ -90,24 +90,6 @@
       ],
       "reason": "Cloudflare Pages 会对不存在的 /api 路径返回站点 HTML，前端需要在公网静态部署环境优先读取 /data 路径。",
       "previous_snapshot": "docs/snapshots/2026-07-06T17-29-50+08-00/project"
-    },
-    {
-      "id": "2026-07-06-enable-cloudflare-access-group-sync",
-      "time": "2026-07-06T17:37:54+08:00",
-      "title": "新增 Cloudflare Access 许可邮箱自动同步机制",
-      "updated_by": "Codex，根据用户选择的第 4 号方案执行",
-      "changed_parts": [
-        ".github/workflows/sync-cloudflare-access.yml",
-        "scripts/sync-cloudflare-access-group.js",
-        "docs/access",
-        "docs/deploy/cloudflare-access-sync.md",
-        "README.md",
-        "package.json",
-        ".gitignore",
-        "docs/snapshots"
-      ],
-      "reason": "通过外部邮箱名单、GitHub Actions 和 Cloudflare API 自动维护 Cloudflare Access Group，使 LEO 公网站点可以逐步实现稳定的访问权限管理，同时避免把真实邮箱名单提交到公开仓库。",
-      "previous_snapshot": "docs/snapshots/2026-07-06T17-37-54+08-00/project"
     }
   ]
 }
