@@ -18,7 +18,7 @@ Production branch: main
 ```text
 本地修改文档
 → 保存变更前快照
-→ 更新日志
+→ 更新 Change Log
 → git commit
 → git push
 → Cloudflare Pages 自动构建

@@ -1,0 +1,142 @@
+{
+  "title": "Change Log",
+  "description": "记录 LEO 项目的重要更新，并指向每次更新前保存的完整快照。",
+  "entries": [
+    {
+      "id": "2026-07-06-initial-baseline",
+      "time": "2026-07-06T16:28:00+08:00",
+      "title": "建立 LEO 项目基准",
+      "updated_by": "Codex，根据用户讨论和明确要求执行",
+      "changed_parts": [
+        "docs/leo-project-baseline",
+        "docs/leo-project-baseline/index.json"
+      ],
+      "reason": "将 LEO 的基础定位、使命、原则、范围、版本发布和修订要求拆分为适合 AI 协作读取的小文档。",
+      "previous_snapshot": null
+    },
+    {
+      "id": "2026-07-06-add-change-log-and-snapshots",
+      "time": "2026-07-06T16:35:58+08:00",
+      "title": "新增 Change Log 与变更前快照机制",
+      "updated_by": "Codex，根据用户明确要求执行",
+      "changed_parts": [
+        "docs/change-log",
+        "docs/snapshots",
+        "site",
+        "server.js",
+        "README.md"
+      ],
+      "reason": "让本地站点可以查看每次更新的时间、内容和原因，并为后续回滚保留变更前完整快照。",
+      "previous_snapshot": "docs/snapshots/2026-07-06T16-35-58+08-00/project"
+    },
+    {
+      "id": "2026-07-06-enable-cloudflare-pages-static-build",
+      "time": "2026-07-06T16:54:26+08:00",
+      "title": "新增 Cloudflare Pages 静态发布能力",
+      "updated_by": "Codex，根据用户明确要求执行",
+      "changed_parts": [
+        "build-static.js",
+        "preview-static.js",
+        "package.json",
+        "docs/deploy/cloudflare-pages.md",
+        "docs/snapshots",
+        "site/assets/app.js",
+        "README.md"
+      ],
+      "reason": "让 LEO 站点可以构建为 Cloudflare Pages 可发布的纯静态站点，同时保留本地 API 预览能力。",
+      "previous_snapshot": "docs/snapshots/2026-07-06T16-54-26+08-00/project"
+    },
+    {
+      "id": "2026-07-06-enable-git-cloudflare-pages-workflow",
+      "time": "2026-07-06T17:17:20+08:00",
+      "title": "新增 Git 与 Cloudflare Pages 自动部署流程",
+      "updated_by": "Codex，根据用户明确要求执行",
+      "changed_parts": [
+        ".gitignore",
+        "docs/deploy/git-cloudflare-pages.md",
+        "docs/snapshots",
+        "docs/change-log/index.json",
+        "README.md"
+      ],
+      "reason": "将 LEO 的长期公网访问方案调整为 Git 仓库触发 Cloudflare Pages 自动部署，避免每次手动上传静态文件。",
+      "previous_snapshot": "docs/snapshots/2026-07-06T17-17-20+08-00/project"
+    },
+    {
+      "id": "2026-07-06-publish-cloudflare-pages-site",
+      "time": "2026-07-06T17:28:20+08:00",
+      "title": "发布 Cloudflare Pages 稳定公网站点",
+      "updated_by": "Codex，根据用户明确要求执行",
+      "changed_parts": [
+        "GitHub remote: robnept-a11y/LEO",
+        "Cloudflare Pages project: life-ethic-outline",
+        "README.md",
+        "docs/deploy/cloudflare-pages.md",
+        "docs/deploy/git-cloudflare-pages.md",
+        "docs/change-log/index.json",
+        "docs/snapshots"
+      ],
+      "reason": "通过 GitHub 仓库触发 Cloudflare Pages 自动构建并发布 LEO，形成稳定公网访问地址。",
+      "previous_snapshot": "docs/snapshots/2026-07-06T17-28-20+08-00/project"
+    },
+    {
+      "id": "2026-07-06-fix-static-data-loading-on-pages",
+      "time": "2026-07-06T17:29:50+08:00",
+      "title": "修复 Cloudflare Pages 静态数据读取",
+      "updated_by": "Codex，根据部署验证结果执行",
+      "changed_parts": [
+        "site/assets/app.js",
+        "docs/change-log/index.json",
+        "docs/snapshots"
+      ],
+      "reason": "Cloudflare Pages 会对不存在的 /api 路径返回站点 HTML，前端需要在公网静态部署环境优先读取 /data 路径。",
+      "previous_snapshot": "docs/snapshots/2026-07-06T17-29-50+08-00/project"
+    },
+    {
+      "id": "2026-07-06-enable-cloudflare-access-group-sync",
+      "time": "2026-07-06T17:37:54+08:00",
+      "title": "新增 Cloudflare Access 许可邮箱自动同步机制",
+      "updated_by": "Codex，根据用户选择的第 4 号方案执行",
+      "changed_parts": [
+        ".github/workflows/sync-cloudflare-access.yml",
+        "scripts/sync-cloudflare-access-group.js",
+        "docs/access",
+        "docs/deploy/cloudflare-access-sync.md",
+        "README.md",
+        "package.json",
+        ".gitignore",
+        "docs/snapshots"
+      ],
+      "reason": "通过外部邮箱名单、GitHub Actions 和 Cloudflare API 自动维护 Cloudflare Access Group，使 LEO 公网站点可以逐步实现稳定的访问权限管理，同时避免把真实邮箱名单提交到公开仓库。",
+      "previous_snapshot": "docs/snapshots/2026-07-06T17-37-54+08-00/project"
+    },
+    {
+      "id": "2026-07-06-improve-navigation-and-change-log-order",
+      "time": "2026-07-06T17:49:19+08:00",
+      "title": "优化固定导航与 Change Log 排序",
+      "updated_by": "Codex，根据用户明确要求执行",
+      "changed_parts": [
+        "site/assets/styles.css",
+        "site/assets/app.js",
+        "docs/change-log/index.json",
+        "docs/snapshots"
+      ],
+      "reason": "让页面导航栏在滚动时保持固定位置并自动折叠但不完全隐藏，同时让 Change Log 按最新消息在上的顺序展示。",
+      "previous_snapshot": "docs/snapshots/2026-07-06T17-49-19+08-00/project"
+    },
+    {
+      "id": "2026-07-06-mobile-breadcrumb-navigation",
+      "time": "2026-07-06T19:03:55+08:00",
+      "title": "将移动端导航改为面包屑模式",
+      "updated_by": "Codex，根据用户明确要求执行",
+      "changed_parts": [
+        "site/index.html",
+        "site/assets/styles.css",
+        "site/assets/app.js",
+        "docs/change-log/index.json",
+        "docs/snapshots"
+      ],
+      "reason": "移动端不再展示完整压缩导航栏，而是默认显示当前位置面包屑，并通过目录按钮展开章节列表，使小屏浏览更节省空间。",
+      "previous_snapshot": "docs/snapshots/2026-07-06T19-03-55+08-00/project"
+    }
+  ]
+}

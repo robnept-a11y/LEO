@@ -85,9 +85,9 @@ docs/deploy/cloudflare-access-sync.md
 docs/access/README.md
 ```
 
-## 更新日志与快照
+## Change Log 与快照
 
-项目基准文档的内容更新记录保存在：
+更新记录保存在：
 
 ```text
 docs/change-log/index.json
@@ -99,6 +99,4 @@ docs/change-log/index.json
 docs/snapshots
 ```
 
-不涉及项目基准文档的站点、部署、访问权限、工具脚本和界面调整，不写入更新日志。
-
-每次项目基准文档正式更新前，应先保存变更前完整快照，再把更新时间、更新者、更新范围、更新理由和快照位置写入更新日志。
+每次正式更新前，应先保存变更前完整快照，再把更新时间、更新者、更新范围、更新理由和快照位置写入 Change Log。

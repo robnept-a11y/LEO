@@ -221,8 +221,8 @@ function renderChangeLog(data) {
 
 async function loadChangeLog() {
   currentView = { type: "changelog" };
-  pageTitle.textContent = "更新日志";
-  setMobilePageLabel("更新日志");
+  pageTitle.textContent = "Change Log";
+  setMobilePageLabel("Change Log");
   docStatus.textContent = "正在读取";
   documentView.innerHTML = "";
   setActiveNavigation("change-log");
