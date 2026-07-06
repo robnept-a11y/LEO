@@ -7,7 +7,7 @@
       "english_full_name": "Life Ethic Outline",
       "chinese_name": "生活纲要"
     },
-    "purpose": "说明 LEO 的基础定位、使命、原则和当前内容范围。",
+    "purpose": "说明 LEO 的基础定位、使命、原则、范围、版本发布和本文件自身的修订方式。",
     "not_data_body": true
   },
   "ai_reading_policy": {
@@ -26,6 +26,18 @@
       "title": "内容范围",
       "file": "03-scope.md",
       "read_when": "需要判断某类伦理关系是否属于 LEO 当前范围时。"
+    },
+    {
+      "id": "versioning",
+      "title": "版本与发布",
+      "file": "04-versioning.md",
+      "read_when": "需要讨论版本、历史记录、公开发布、引用方式时。"
+    },
+    {
+      "id": "revision",
+      "title": "项目基准修订",
+      "file": "05-revision.md",
+      "read_when": "需要修改本项目基准或讨论其修订条件时。"
     }
   ]
 }

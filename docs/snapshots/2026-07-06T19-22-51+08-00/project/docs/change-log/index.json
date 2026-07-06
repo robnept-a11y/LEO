@@ -42,21 +42,6 @@
       ],
       "reason": "用户要求去掉“项目基本信息”，并将定位、边界、使命、基本原则合并为“导言”页面的内容章节。",
       "previous_snapshot": "docs/snapshots/2026-07-06T19-17-44+08-00/project"
-    },
-    {
-      "id": "2026-07-06-remove-versioning-and-revision",
-      "time": "2026-07-06T19:22:51+08:00",
-      "title": "删除版本与修订章节",
-      "updated_by": "Codex，根据用户明确要求执行",
-      "changed_parts": [
-        "docs/leo-project-baseline/04-versioning.md",
-        "docs/leo-project-baseline/05-revision.md",
-        "docs/leo-project-baseline/index.json",
-        "docs/leo-project-baseline/README.md",
-        "docs/leo-project-baseline/00-introduction.md"
-      ],
-      "reason": "用户要求删除“版本与发布”“项目基准修订”章节和相关页面，因此移除对应章节文件、索引项，并收紧项目基准说明。",
-      "previous_snapshot": "docs/snapshots/2026-07-06T19-22-51+08-00/project"
     }
   ]
 }
