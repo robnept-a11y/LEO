@@ -4,12 +4,6 @@
 
 将 LEO 发布为 Cloudflare Pages 静态站点，并在以后绑定易读域名。
 
-## 当前公网地址
-
-```text
-https://life-ethic-outline.pages.dev/
-```
-
 ## 本地构建
 
 在项目根目录运行：
@@ -32,14 +26,6 @@ dist
 Build command: node build-static.js
 Build output directory: dist
 Root directory: /
-```
-
-当前项目：
-
-```text
-Project name: life-ethic-outline
-Production branch: main
-Git repository: robnept-a11y/LEO
 ```
 
 ## 数据来源
@@ -70,3 +56,4 @@ leo.example.com
 ```
 
 域名问题可以在项目内容结构稳定后再处理。
+

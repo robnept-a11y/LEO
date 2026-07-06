@@ -1,0 +1,22 @@
+{
+  "snapshot_id": "2026-07-06T17-28-20+08-00",
+  "created_at": "2026-07-06T17:28:20+08:00",
+  "created_by": "Codex",
+  "purpose": "保存记录 Cloudflare Pages 正式公网地址之前的完整项目状态。",
+  "scope": [
+    "docs/leo-project-baseline",
+    "docs/change-log",
+    "docs/deploy",
+    "docs/snapshots/README.md",
+    "site",
+    "server.js",
+    "build-static.js",
+    "preview-static.js",
+    "package.json",
+    "README.md",
+    ".gitignore",
+    ".gitattributes"
+  ],
+  "snapshot_root": "docs/snapshots/2026-07-06T17-28-20+08-00/project",
+  "git_commit": "a4c9608"
+}

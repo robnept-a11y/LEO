@@ -60,23 +60,6 @@
       ],
       "reason": "将 LEO 的长期公网访问方案调整为 Git 仓库触发 Cloudflare Pages 自动部署，避免每次手动上传静态文件。",
       "previous_snapshot": "docs/snapshots/2026-07-06T17-17-20+08-00/project"
-    },
-    {
-      "id": "2026-07-06-publish-cloudflare-pages-site",
-      "time": "2026-07-06T17:28:20+08:00",
-      "title": "发布 Cloudflare Pages 稳定公网站点",
-      "updated_by": "Codex，根据用户明确要求执行",
-      "changed_parts": [
-        "GitHub remote: robnept-a11y/LEO",
-        "Cloudflare Pages project: life-ethic-outline",
-        "README.md",
-        "docs/deploy/cloudflare-pages.md",
-        "docs/deploy/git-cloudflare-pages.md",
-        "docs/change-log/index.json",
-        "docs/snapshots"
-      ],
-      "reason": "通过 GitHub 仓库触发 Cloudflare Pages 自动构建并发布 LEO，形成稳定公网访问地址。",
-      "previous_snapshot": "docs/snapshots/2026-07-06T17-28-20+08-00/project"
     }
   ]
 }

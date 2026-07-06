@@ -2,14 +2,6 @@
 
 LEO 是 Life Ethic Outline 的缩写，中文名称为“伦理大纲”。
 
-## 公网地址
-
-当前稳定公网地址：
-
-```text
-https://life-ethic-outline.pages.dev/
-```
-
 ## 本地查看器
 
 启动本地站点：

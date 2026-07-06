@@ -4,15 +4,6 @@
 
 LEO 使用 Git 保存历史版本，并由 Cloudflare Pages 在每次推送后自动构建和发布。
 
-## 当前发布状态
-
-```text
-GitHub repository: robnept-a11y/LEO
-Cloudflare Pages project: life-ethic-outline
-Public URL: https://life-ethic-outline.pages.dev/
-Production branch: main
-```
-
 ## 推荐流程
 
 ```text
@@ -42,12 +33,6 @@ Root directory: /
 life-ethic-outline
 ```
 
-当前仓库名：
-
-```text
-LEO
-```
-
 如果希望项目公开访问，仓库可以设为 Public。  
 如果希望源码暂时不公开，仓库可以设为 Private，Cloudflare Pages 仍可通过授权读取仓库。
 
@@ -62,3 +47,4 @@ docs/change-log/index.json
 ```
 
 然后提交到 Git。
+
