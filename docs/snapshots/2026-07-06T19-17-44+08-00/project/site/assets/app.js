@@ -9,7 +9,7 @@ const mobileNavToggle = document.querySelector("#mobile-nav-toggle");
 const primaryNavigation = document.querySelector("#primary-navigation");
 
 let indexData = null;
-let currentView = { type: "section", id: "introduction" };
+let currentView = { type: "section", id: "meta" };
 let tickingScrollUpdate = false;
 
 function updateScrolledState() {

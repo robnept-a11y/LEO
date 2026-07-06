@@ -1,0 +1,11 @@
+{
+  "name": "leo",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node build-static.js",
+    "preview:static": "node preview-static.js",
+    "sync:access": "node scripts/sync-cloudflare-access-group.js"
+  }
+}

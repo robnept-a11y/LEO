@@ -16,10 +16,22 @@
   },
   "sections": [
     {
-      "id": "introduction",
-      "title": "导言",
-      "file": "00-introduction.md",
-      "read_when": "需要确认 LEO 的定位、边界、使命或基本原则时。"
+      "id": "meta",
+      "title": "项目基本信息",
+      "file": "00-meta.md",
+      "read_when": "需要确认 LEO 的名称、定位、文档边界时。"
+    },
+    {
+      "id": "purpose",
+      "title": "项目使命",
+      "file": "01-purpose.md",
+      "read_when": "需要讨论项目为什么存在、服务什么目标、不能替代什么时。"
+    },
+    {
+      "id": "principles",
+      "title": "基本原则",
+      "file": "02-principles.md",
+      "read_when": "需要判断内容表达、开放性、可追溯性、多元性、非强制性或长期维护原则时。"
     },
     {
       "id": "scope",

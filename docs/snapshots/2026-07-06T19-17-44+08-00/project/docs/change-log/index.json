@@ -26,22 +26,6 @@
       ],
       "reason": "用户明确要求将中文名称调整为“生活纲要”，因此同步更新项目基准文档中的中文名称及相关表述。",
       "previous_snapshot": "docs/snapshots/2026-07-06T19-10-55+08-00/project"
-    },
-    {
-      "id": "2026-07-06-merge-introduction-sections",
-      "time": "2026-07-06T19:17:44+08:00",
-      "title": "合并导言内容章节",
-      "updated_by": "Codex，根据用户明确要求执行",
-      "changed_parts": [
-        "docs/leo-project-baseline/00-introduction.md",
-        "docs/leo-project-baseline/00-meta.md",
-        "docs/leo-project-baseline/01-purpose.md",
-        "docs/leo-project-baseline/02-principles.md",
-        "docs/leo-project-baseline/index.json",
-        "docs/leo-project-baseline/README.md"
-      ],
-      "reason": "用户要求去掉“项目基本信息”，并将定位、边界、使命、基本原则合并为“导言”页面的内容章节。",
-      "previous_snapshot": "docs/snapshots/2026-07-06T19-17-44+08-00/project"
     }
   ]
 }

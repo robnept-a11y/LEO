@@ -26,7 +26,9 @@
 
 ## 文件索引
 
-- `00-introduction.md`：导言，包括定位、边界、使命和基本原则。
+- `00-meta.md`：项目基本信息和文件边界。
+- `01-purpose.md`：项目使命。
+- `02-principles.md`：基本原则。
 - `03-scope.md`：内容范围。
 - `04-versioning.md`：版本与发布。
 - `05-revision.md`：项目基准的修订。
