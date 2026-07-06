@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "2026-07-06T17-17-20+08-00",
+  "created_at": "2026-07-06T17:17:20+08:00",
+  "created_by": "Codex",
+  "purpose": "保存引入 Git 与 Cloudflare Pages 自动部署流程之前的完整项目状态。",
+  "scope": [
+    "docs/leo-project-baseline",
+    "docs/change-log",
+    "docs/deploy",
+    "docs/snapshots/README.md",
+    "site",
+    "server.js",
+    "build-static.js",
+    "preview-static.js",
+    "package.json",
+    "README.md"
+  ],
+  "snapshot_root": "docs/snapshots/2026-07-06T17-17-20+08-00/project"
+}

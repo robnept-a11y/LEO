@@ -1,0 +1,65 @@
+{
+  "title": "Change Log",
+  "description": "记录 LEO 项目的重要更新，并指向每次更新前保存的完整快照。",
+  "entries": [
+    {
+      "id": "2026-07-06-initial-baseline",
+      "time": "2026-07-06T16:28:00+08:00",
+      "title": "建立 LEO 项目基准",
+      "updated_by": "Codex，根据用户讨论和明确要求执行",
+      "changed_parts": [
+        "docs/leo-project-baseline",
+        "docs/leo-project-baseline/index.json"
+      ],
+      "reason": "将 LEO 的基础定位、使命、原则、范围、版本发布和修订要求拆分为适合 AI 协作读取的小文档。",
+      "previous_snapshot": null
+    },
+    {
+      "id": "2026-07-06-add-change-log-and-snapshots",
+      "time": "2026-07-06T16:35:58+08:00",
+      "title": "新增 Change Log 与变更前快照机制",
+      "updated_by": "Codex，根据用户明确要求执行",
+      "changed_parts": [
+        "docs/change-log",
+        "docs/snapshots",
+        "site",
+        "server.js",
+        "README.md"
+      ],
+      "reason": "让本地站点可以查看每次更新的时间、内容和原因，并为后续回滚保留变更前完整快照。",
+      "previous_snapshot": "docs/snapshots/2026-07-06T16-35-58+08-00/project"
+    },
+    {
+      "id": "2026-07-06-enable-cloudflare-pages-static-build",
+      "time": "2026-07-06T16:54:26+08:00",
+      "title": "新增 Cloudflare Pages 静态发布能力",
+      "updated_by": "Codex，根据用户明确要求执行",
+      "changed_parts": [
+        "build-static.js",
+        "preview-static.js",
+        "package.json",
+        "docs/deploy/cloudflare-pages.md",
+        "docs/snapshots",
+        "site/assets/app.js",
+        "README.md"
+      ],
+      "reason": "让 LEO 站点可以构建为 Cloudflare Pages 可发布的纯静态站点，同时保留本地 API 预览能力。",
+      "previous_snapshot": "docs/snapshots/2026-07-06T16-54-26+08-00/project"
+    },
+    {
+      "id": "2026-07-06-enable-git-cloudflare-pages-workflow",
+      "time": "2026-07-06T17:17:20+08:00",
+      "title": "新增 Git 与 Cloudflare Pages 自动部署流程",
+      "updated_by": "Codex，根据用户明确要求执行",
+      "changed_parts": [
+        ".gitignore",
+        "docs/deploy/git-cloudflare-pages.md",
+        "docs/snapshots",
+        "docs/change-log/index.json",
+        "README.md"
+      ],
+      "reason": "将 LEO 的长期公网访问方案调整为 Git 仓库触发 Cloudflare Pages 自动部署，避免每次手动上传静态文件。",
+      "previous_snapshot": "docs/snapshots/2026-07-06T17-17-20+08-00/project"
+    }
+  ]
+}

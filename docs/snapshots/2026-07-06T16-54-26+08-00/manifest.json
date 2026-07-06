@@ -1,0 +1,15 @@
+{
+  "snapshot_id": "2026-07-06T16-54-26+08-00",
+  "created_at": "2026-07-06T16:54:26+08:00",
+  "created_by": "Codex",
+  "purpose": "保存实现 Cloudflare Pages 静态发布能力之前的完整项目状态。",
+  "scope": [
+    "docs/leo-project-baseline",
+    "docs/change-log",
+    "docs/snapshots/README.md",
+    "site",
+    "server.js",
+    "README.md"
+  ],
+  "snapshot_root": "docs/snapshots/2026-07-06T16-54-26+08-00/project"
+}

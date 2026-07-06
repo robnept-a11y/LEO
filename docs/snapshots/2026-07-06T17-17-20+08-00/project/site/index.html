@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LEO 本地查看器</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">LEO</div>
+          <div>
+            <h1>伦理大纲</h1>
+            <p>Life Ethic Outline</p>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="文档章节">
+          <div class="nav-label">项目基准</div>
+          <div id="section-list" class="section-list"></div>
+          <div class="nav-label nav-label-spaced">记录</div>
+          <button id="change-log-button" class="section-button" type="button">Change Log</button>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="toolbar">
+          <div>
+            <div id="doc-status" class="status">正在读取</div>
+            <h2 id="page-title">LEO 项目基准</h2>
+          </div>
+          <button id="refresh-button" type="button" title="重新读取文档">刷新</button>
+        </header>
+
+        <article id="document-view" class="document-view" aria-live="polite"></article>
+      </main>
+    </div>
+
+    <script src="/assets/app.js"></script>
+  </body>
+</html>
