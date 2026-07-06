@@ -4,9 +4,6 @@ const pageTitle = document.querySelector("#page-title");
 const docStatus = document.querySelector("#doc-status");
 const refreshButton = document.querySelector("#refresh-button");
 const changeLogButton = document.querySelector("#change-log-button");
-const mobileCurrentPage = document.querySelector("#mobile-current-page");
-const mobileNavToggle = document.querySelector("#mobile-nav-toggle");
-const primaryNavigation = document.querySelector("#primary-navigation");
 
 let indexData = null;
 let currentView = { type: "section", id: "meta" };
@@ -153,26 +150,15 @@ function setActiveNavigation(sectionId) {
   changeLogButton.classList.toggle("active", sectionId === "change-log");
 }
 
-function setMobilePageLabel(label) {
-  mobileCurrentPage.textContent = label;
-}
-
-function closeMobileNavigation() {
-  document.body.classList.remove("is-mobile-nav-open");
-  mobileNavToggle.setAttribute("aria-expanded", "false");
-}
-
 async function loadSection(sectionId) {
   const section = indexData.sections.find((item) => item.id === sectionId);
   if (!section) return;
 
   currentView = { type: "section", id: sectionId };
   pageTitle.textContent = section.title;
-  setMobilePageLabel(section.title);
   docStatus.textContent = "正在读取";
   documentView.innerHTML = "";
   setActiveNavigation(sectionId);
-  closeMobileNavigation();
 
   try {
     const response = await fetchFirstAvailable(orderedSources(
@@ -222,11 +208,9 @@ function renderChangeLog(data) {
 async function loadChangeLog() {
   currentView = { type: "changelog" };
   pageTitle.textContent = "Change Log";
-  setMobilePageLabel("Change Log");
   docStatus.textContent = "正在读取";
   documentView.innerHTML = "";
   setActiveNavigation("change-log");
-  closeMobileNavigation();
 
   try {
     const response = await fetchFirstAvailable(orderedSources(
@@ -263,13 +247,6 @@ refreshButton.addEventListener("click", async () => {
 });
 
 changeLogButton.addEventListener("click", loadChangeLog);
-mobileNavToggle.addEventListener("click", () => {
-  const isOpen = document.body.classList.toggle("is-mobile-nav-open");
-  mobileNavToggle.setAttribute("aria-expanded", String(isOpen));
-});
-primaryNavigation.addEventListener("click", (event) => {
-  if (event.target.closest(".section-button")) closeMobileNavigation();
-});
 window.addEventListener("scroll", scheduleScrolledStateUpdate, { passive: true });
 updateScrolledState();
 

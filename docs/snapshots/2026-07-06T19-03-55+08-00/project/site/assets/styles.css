@@ -83,10 +83,6 @@ button {
   transition: margin-top 180ms ease;
 }
 
-.mobile-breadcrumb {
-  display: none;
-}
-
 .nav-label {
   margin-bottom: 10px;
   color: var(--muted);
@@ -279,99 +275,23 @@ body.is-scrolled .nav {
   .sidebar {
     z-index: 20;
     height: auto;
-    max-height: none;
+    max-height: 58vh;
     border-right: 0;
     border-bottom: 1px solid var(--line);
     box-shadow: 0 8px 18px rgb(0 0 0 / 0.08);
-    padding: 12px 14px;
-    transition: padding 180ms ease;
-  }
-
-  .brand {
-    grid-template-columns: 40px minmax(0, 1fr);
-    padding-bottom: 10px;
-  }
-
-  .brand-mark {
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
-  }
-
-  .brand h1 {
-    font-size: 18px;
-  }
-
-  .brand p {
-    font-size: 12px;
-  }
-
-  .mobile-breadcrumb {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    align-items: center;
-    padding-top: 10px;
-  }
-
-  .breadcrumb-path {
-    display: flex;
-    min-width: 0;
-    gap: 7px;
-    align-items: center;
-    color: var(--muted);
-    font-size: 14px;
-    line-height: 1.35;
-  }
-
-  .breadcrumb-path strong {
-    min-width: 0;
-    overflow: hidden;
-    color: var(--text);
-    font-weight: 700;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  #mobile-nav-toggle {
-    flex: 0 0 auto;
-    border: 1px solid var(--line);
-    background: var(--panel);
-    color: var(--text);
-    cursor: pointer;
-    padding: 7px 11px;
-  }
-
-  #mobile-nav-toggle:hover,
-  #mobile-nav-toggle:focus-visible {
-    outline: 2px solid var(--focus);
-    outline-offset: 2px;
-  }
-
-  .nav {
-    display: none;
-    max-height: calc(100vh - 128px);
-    overflow-y: auto;
-    margin-top: 12px;
-    padding-top: 12px;
-    border-top: 1px solid var(--line);
-  }
-
-  body.is-mobile-nav-open .nav {
-    display: block;
+    transition: max-height 180ms ease, padding 180ms ease;
   }
 
   body.is-scrolled .sidebar {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    max-height: 132px;
   }
 
-  body.is-scrolled .brand {
-    display: none;
+  body.is-scrolled .nav-label {
+    margin-bottom: 6px;
   }
 
-  body.is-scrolled .mobile-breadcrumb {
-    padding-top: 0;
+  body.is-scrolled .nav-label-spaced {
+    margin-top: 10px;
   }
 
   .toolbar {

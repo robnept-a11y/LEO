@@ -122,21 +122,6 @@
       ],
       "reason": "让页面导航栏在滚动时保持固定位置并自动折叠但不完全隐藏，同时让 Change Log 按最新消息在上的顺序展示。",
       "previous_snapshot": "docs/snapshots/2026-07-06T17-49-19+08-00/project"
-    },
-    {
-      "id": "2026-07-06-mobile-breadcrumb-navigation",
-      "time": "2026-07-06T19:03:55+08:00",
-      "title": "将移动端导航改为面包屑模式",
-      "updated_by": "Codex，根据用户明确要求执行",
-      "changed_parts": [
-        "site/index.html",
-        "site/assets/styles.css",
-        "site/assets/app.js",
-        "docs/change-log/index.json",
-        "docs/snapshots"
-      ],
-      "reason": "移动端不再展示完整压缩导航栏，而是默认显示当前位置面包屑，并通过目录按钮展开章节列表，使小屏浏览更节省空间。",
-      "previous_snapshot": "docs/snapshots/2026-07-06T19-03-55+08-00/project"
     }
   ]
 }
