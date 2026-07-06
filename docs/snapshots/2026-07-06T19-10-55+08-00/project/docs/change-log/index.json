@@ -13,19 +13,6 @@
       ],
       "reason": "将 LEO 的基础定位、使命、原则、范围、版本发布和修订要求拆分为适合 AI 协作读取的小文档。",
       "previous_snapshot": null
-    },
-    {
-      "id": "2026-07-06-rename-chinese-title-to-life-outline",
-      "time": "2026-07-06T19:10:55+08:00",
-      "title": "将中文名称改为生活纲要",
-      "updated_by": "Codex，根据用户明确要求执行",
-      "changed_parts": [
-        "docs/leo-project-baseline/README.md",
-        "docs/leo-project-baseline/index.json",
-        "docs/leo-project-baseline/00-meta.md"
-      ],
-      "reason": "用户明确要求将中文名称调整为“生活纲要”，因此同步更新项目基准文档中的中文名称及相关表述。",
-      "previous_snapshot": "docs/snapshots/2026-07-06T19-10-55+08-00/project"
     }
   ]
 }

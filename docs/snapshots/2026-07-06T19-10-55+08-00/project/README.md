@@ -1,6 +1,6 @@
 # LEO
 
-LEO 是 Life Ethic Outline 的缩写，中文名称为“生活纲要”。
+LEO 是 Life Ethic Outline 的缩写，中文名称为“伦理大纲”。
 
 ## 公网地址
 
